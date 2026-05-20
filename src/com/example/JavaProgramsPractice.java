@@ -47,7 +47,7 @@ public class JavaProgramsPractice {
         }
         
         String cleaned = input.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
-        return cleaned.equals(new StringBuilder(cleaned).reverse().toString());
+        return cleaned.contentEquals(new StringBuilder(cleaned).reverse());
     }
     
     /**
